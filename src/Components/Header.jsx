@@ -10,7 +10,8 @@ const Header = () => {
   };
 
   return (
-    <header className={`bg-black text-white p-4 flex justify-between items-center sm:overflow-x-hidden border-b-2 `}>
+    <>
+    <header className={`bg-black text-white p-4 flex justify-between items-center sm:overflow-x-hidden  `}>
       <h1 className="text-2xl sm:text-3xl font-bold">Rishi Kashyap</h1>
       <button className="sm:hidden text-2xl" onClick={toggleMenu}>
         {menuOpen ? <FaTimes /> : <FaBars />}
@@ -39,7 +40,10 @@ const Header = () => {
          
         </div>
       </nav>
+      
     </header>
+     <hr className=" border-slate-500" />
+     </>
   );
 };
 
