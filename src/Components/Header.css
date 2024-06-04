@@ -49,3 +49,25 @@ nav {
     animation: zoomIn 1s ease-in-out;
   }
   
+  .gradiant-text {
+    @apply bg-gradient-to-t from-blue-500 to-cyan-500 text-transparent bg-clip-text;
+    white-space: nowrap; /* Add this line */
+    overflow: hidden;
+    border-right: 2px solid #fff;
+    animation: typing-text 3s steps(1000) infinite, blink 0.5s ease infinite;
+  }
+  
+  @keyframes typing-text {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes blink {
+    50% {
+      border-right-color: transparent;
+    }
+  }

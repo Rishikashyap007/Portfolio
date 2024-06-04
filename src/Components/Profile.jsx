@@ -7,7 +7,7 @@ const Profile = () => {
     <section id="profile" className="p-6 bg-gradient-to-r from-black to-black text-white flex flex-col items-center">
       <div className="mb-4 text-center">
         <h1 className="text-4xl font-semibold mb-2 animate-fade-in">Rishi Kashyap</h1>
-        <h2 className="text-xl font-semibold text-gray-200 animate-fade-in">MERN Stack Developer</h2>
+        <h2 className="font-bold text-2xl md:text-4xl mt-1 gradiant-text">MERN Stack Developer</h2>
       </div>
       <div className="text-center mb-8">
         <img 
