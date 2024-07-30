@@ -23,7 +23,7 @@ function Projects() {
             <li>The user dashboard allows students to view and update their details and track their enrolled courses.</li>
           </ul>
           <div className="btns flex flex-col md:flex-row gap-4 justify-center items-center mt-4">
-            <a href="https://learniitt.netlify.app/" target="_blank">
+            <a href="https://learn-it-mocha.vercel.app/" target="_blank">
               <button className="bg-blue-600 text-white text-xl font-medium py-2 px-6 rounded-lg shadow-md hover:bg-blue-700 transition-all duration-300 transform hover:scale-105">View Project</button>
             </a>
             <a href="https://github.com/Rishikashyap007/Learn...it" target="_blank">
