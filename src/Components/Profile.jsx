@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import './Header.css';
-import MERN from '../assests/MERN.pdf';
+import MERN from '../assests/Resume.pdf';
 
 const roles = [
   'Full Stack Developer',
