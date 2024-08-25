@@ -1,13 +1,41 @@
-import React from 'react';
-import './Header.css'
-import MERN from '../assests/MERN.pdf'
+
+import React, { useState, useEffect } from 'react';
+import './Header.css';
+import MERN from '../assests/MERN.pdf';
+
+const roles = [
+  'MERN Full Stack Developer',
+  'React Developer',
+  'Frontend Developer',
+  'Backend Developer'
+];
 
 const Profile = () => {
+  const [currentRole, setCurrentRole] = useState(roles[0]);
+  const [transitioning, setTransitioning] = useState(false);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setTransitioning(true);
+      setTimeout(() => {
+        setCurrentRole(prevRole => {
+          const currentIndex = roles.indexOf(prevRole);
+          return roles[(currentIndex + 1) % roles.length];
+        });
+        setTransitioning(false);
+      }, 500); // Duration of the transition
+    }, 3000); // Duration to show each role
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
-    <section id="profile" className="p-6 bg-gradient-to-r from-black to-black text-white flex flex-col items-center">
+    <section id="profile" className="bg-gradient-to-b from-gray-900 to-gray-900 p-6 text-white flex flex-col items-center">
       <div className="mb-4 text-center">
         <h1 className="text-4xl font-semibold mb-2 animate-fade-in">Rishi Kashyap</h1>
-        <h2 className="font-bold text-2xl md:text-4xl mt-1 gradiant-text">MERN Stack Developer</h2>
+        <h2 className={`font-bold text-2xl md:text-4xl mt-1 gradient-text ${transitioning ? 'fade-out' : 'fade-in'}`}>
+          {currentRole}
+        </h2>
       </div>
       <div className="text-center mb-8">
         <img 
@@ -27,3 +55,4 @@ const Profile = () => {
 };
 
 export default Profile;
+

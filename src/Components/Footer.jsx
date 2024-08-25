@@ -5,8 +5,8 @@ import { faEnvelope, faPhone, faMapMarkerAlt } from '@fortawesome/free-solid-svg
 
 const Footer = () => {
   return (
-    <footer id='contact'
-    className="bg-black text-gray-100 p-6 text-center md:text-left">
+    <footer id='contacts'
+    className="bg-gradient-to-b from-gray-900 to-gray-900 text-gray-100 p-6 text-center md:text-left">
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center md:items-start">
         <div className="mb-4 md:mb-0">
           <p className="text-lg font-semibold">Contact</p>
