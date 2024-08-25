@@ -4,7 +4,7 @@ import './Header.css';
 import MERN from '../assests/MERN.pdf';
 
 const roles = [
-  'MERN Full Stack Developer',
+  'Full Stack Developer',
   'React Developer',
   'Frontend Developer',
   'Backend Developer'

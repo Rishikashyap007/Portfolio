@@ -31,7 +31,7 @@ const Footer = () => {
           <a href="https://www.linkedin.com/in/rishi-kashyap" className="text-gray-100 hover:text-gray-300" aria-label="LinkedIn">
             <FontAwesomeIcon icon={faLinkedin} size="2x" />
           </a>
-          <a href="https://github.com/rishi-kashyap" className="text-gray-100 hover:text-gray-300" aria-label="Github">
+          <a href="https://github.com/Rishikashyap007" className="text-gray-100 hover:text-gray-300" aria-label="Github">
             <FontAwesomeIcon icon={faGithub} size="2x" />
           </a>
         </div>
